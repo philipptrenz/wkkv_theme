@@ -76,11 +76,24 @@ get_header(); ?>
 </section>
 <section class="container" >
 
+<div class="events-wrap" role="main">
+
+	<div class="row">
+		<div class="large-offset-1 large-11 medium-offset-1 medium-11 small-13 columns">
+			<?php get_sidebar(); ?>
+		</div>
+	</div>
+
+</div>
+
+</section>
+<section class="container" >
+
 <div class="second-wrap" role="main">
 
 	<div class="row">
-		<div class="large-offset-1 large-11 medium-offset-1 medium-11 small-13 columns front-page-logo">
-			<?php get_sidebar(); ?>
+		<div class="large-1 medium-1 small-1 columns">
+			<div style="transform: rotate(90deg);transform-origin: left top 0;">Angebote</div>
 		</div>
 	</div>
 
