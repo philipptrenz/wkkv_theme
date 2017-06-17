@@ -18,20 +18,21 @@ get_header(); ?>
 
 <div class="main-wrap" role="main">
 
-	<div class="row">
-		<div class="large-1 columns">test</div>
-		<div class="large-1 columns">test</div>
-		<div class="large-1 columns">test</div>
-		<div class="large-1 columns">test</div>
-		<div class="large-1 columns">test</div>
-		<div class="large-1 columns">test</div>
-		<div class="large-1 columns">test</div>
-		<div class="large-1 columns">test</div>
-		<div class="large-1 columns">test</div>
-		<div class="large-1 columns">test</div>
-		<div class="large-1 columns">test</div>
-		<div class="large-1 columns">test</div>
-		<div class="large-1 columns end">test</div>
+	<div class="row" style="padding-bottom: 50px;">
+		<div class="large-1 columns" style="text-align: center; color: white;"><- col -></div>
+		<div class="large-1 columns" style="text-align: center; color: white;"><- col -></div>
+		<div class="large-1 columns" style="text-align: center; color: white;"><- col -></div>
+		<div class="large-1 columns" style="text-align: center; color: white;"><- col -></div>
+		<div class="large-1 columns" style="text-align: center; color: white;"><- col -></div>
+		<div class="large-1 columns" style="text-align: center; color: white;"><- col -></div>
+		<div class="large-1 columns" style="text-align: center; color: white;"><- col -></div>
+		<div class="large-1 columns" style="text-align: center; color: white;"><- col -></div>
+		<div class="large-1 columns" style="text-align: center; color: white;"><- col -></div>
+		<div class="large-1 columns" style="text-align: center; color: white;"><- col -></div>
+		<div class="large-1 columns" style="text-align: center; color: white;"><- col -></div>
+		<div class="large-1 columns" style="text-align: center; color: white;"><- col -></div>
+		<div class="large-1 columns" style="text-align: center; color: white;"><- col -></div>
+
 	</div>
 
 	<div class="row">
@@ -39,9 +40,11 @@ get_header(); ?>
 			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/logo_white_pur.svg" style="width: 100%;">
 		</div>
 
-		<div class="large-5 small-13 columns">
+		<div class="large-offset-1 large-5 small-13 columns">
 			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/logo_white_pur.svg" style="width: 100%;">
 		</div>
+
+		<div class="large-1"></div>
 
 	</div>
 
