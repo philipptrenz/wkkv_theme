@@ -9,8 +9,6 @@
   @include show-for(medium);
 }
 
-
-
 // Site title
 .site-mobile-title a {
   // placeholder
@@ -69,6 +67,13 @@
   }
 }
 
+
+// Font color
+
+.desktop-menu a,
+.mobile-menu a {
+  color: $black;
+}
 
 
 // WP post navigation
