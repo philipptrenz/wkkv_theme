@@ -16,7 +16,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<?php wp_head(); ?>
 	</head>
-	<body <?php body_class(); ?> <?php if (is_front_page()) echo 'id="front-page"'?>>
+	<body <?php body_class(); ?>>
 	<?php do_action( 'foundationpress_after_body' ); ?>
 
 	<?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) === 'offcanvas' ) : ?>
@@ -68,5 +68,5 @@
 		</nav>
 	</header>
 
-	<section class="container">
+	<section class="container <?php if (is_front_page()) echo 'front-page'?>" >
 		<?php do_action( 'foundationpress_after_header' );

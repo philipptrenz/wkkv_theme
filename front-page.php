@@ -18,37 +18,20 @@ get_header(); ?>
 
 <div class="main-wrap" role="main">
 
-	<div class="row" style="padding-bottom: 50px;">
-		<div class="large-1 columns" style="text-align: center; color: white;"><- col -></div>
-		<div class="large-1 columns" style="text-align: center; color: white;"><- col -></div>
-		<div class="large-1 columns" style="text-align: center; color: white;"><- col -></div>
-		<div class="large-1 columns" style="text-align: center; color: white;"><- col -></div>
-		<div class="large-1 columns" style="text-align: center; color: white;"><- col -></div>
-		<div class="large-1 columns" style="text-align: center; color: white;"><- col -></div>
-		<div class="large-1 columns" style="text-align: center; color: white;"><- col -></div>
-		<div class="large-1 columns" style="text-align: center; color: white;"><- col -></div>
-		<div class="large-1 columns" style="text-align: center; color: white;"><- col -></div>
-		<div class="large-1 columns" style="text-align: center; color: white;"><- col -></div>
-		<div class="large-1 columns" style="text-align: center; color: white;"><- col -></div>
-		<div class="large-1 columns" style="text-align: center; color: white;"><- col -></div>
-		<div class="large-1 columns" style="text-align: center; color: white;"><- col -></div>
-
-	</div>
-
 	<div class="row">
-		<div class="large-offset-1 large-5 small-13 columns">
+		<div class="large-offset-1 large-5 small-13 columns front-page-logo">
 			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/logo_white_pur.svg" style="width: 100%;">
 		</div>
 
-		<div class="large-offset-1 large-5 small-13 columns">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/logo_white_pur.svg" style="width: 100%;">
+		<div class="large-offset-1 large-5 small-13 columns front-page-logo">
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/logo_white_text_pur.svg" style="width: 100%;">
 		</div>
 
 		<div class="large-1"></div>
 
 	</div>
 
-	<div class="row">
+	<div class="row ">
 
 		<div class="large-offset-7 large-5 small-13 columns">
 			<article class="main-content">
@@ -57,25 +40,13 @@ get_header(); ?>
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 						
-
 					<div id="post-<?php the_ID(); ?>" <?php post_class('blogpost-entry'); ?>>
-						<!--<header>
-							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-							<?php foundationpress_entry_meta(); ?>
-						</header>-->
 						<div class="entry-content">
 							<?php the_content( __( 'Continue reading...', 'foundationpress' ) ); ?>
 						</div>
-
-
-						<!--<footer>
-							<?php $tag = get_the_tags(); if ( $tag ) { ?><p><?php the_tags(); ?></p><?php } ?>
-						</footer>
-						<hr />-->
 					</div>
 
-
-
+					<?php break; ?>
 				<?php endwhile; ?>
 
 				<?php else : ?>
@@ -100,10 +71,21 @@ get_header(); ?>
 
 	</div>
 
+</div>
 
-	
-	<!--<?php get_sidebar(); ?>-->
+</section>
+<section class="container" >
+
+<div class="second-wrap" role="main">
+
+	<div class="row">
+		<div class="large-offset-1 large-11 medium-offset-1 medium-11 small-13 columns front-page-logo">
+			<?php get_sidebar(); ?>
+		</div>
+	</div>
 
 </div>
+
+
 
 <?php get_footer();
