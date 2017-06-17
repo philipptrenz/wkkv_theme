@@ -53,3 +53,17 @@ require_once( 'library/responsive-images.php' );
 
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/class-foundationpress-protocol-relative-theme-assets.php' );
+
+
+
+// own stuff
+
+add_theme_support( 'custom-logo' );
+
+add_theme_support( 'custom-logo', array(
+	'height'      => 286,
+	'width'       => 417,
+	'flex-height' => false,
+	'flex-width'  => true,
+	'header-text' => array( 'site-title', 'site-description' ),
+) );
