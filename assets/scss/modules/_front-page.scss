@@ -1,0 +1,22 @@
+#front-page {
+	background-color: $wkkv-green;
+
+	.title-bar {
+		background-color: $wkkv-green;
+
+		* {
+			background-color: $wkkv-green;
+			color: $white !important;
+		}
+	}
+
+
+	.main-content {
+		color: $white;
+	}
+
+	article {
+		width: 100%;
+	}
+}
+

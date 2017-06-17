@@ -16,7 +16,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<?php wp_head(); ?>
 	</head>
-	<body <?php body_class(); ?>>
+	<body <?php body_class(); ?> <?php if (is_front_page()) echo 'id="front-page"'?>>
 	<?php do_action( 'foundationpress_after_body' ); ?>
 
 	<?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) === 'offcanvas' ) : ?>
@@ -29,7 +29,12 @@
 	<header class="site-header" role="banner">
 		<div class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle() ?>>
 			<div class="title-bar-left">
-				<button class="menu-icon" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>"></button>
+
+
+				<button class="hamburger-menu" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>"><i class="fa fa-bars" aria-hidden="true"></i></button>
+
+				<!--<button class="menu-icon" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>"></button>-->
+
 				<span class="site-mobile-title title-bar-title">
 					<!--<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>-->
 				</span>
