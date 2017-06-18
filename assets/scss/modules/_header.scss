@@ -4,6 +4,7 @@
 	position: absolute;
 	top: 0; left: 0;
 	width: 100%;
+	background: $white;
 
 	.title-bar {
 		background-color: $wkkv-green !important;
@@ -26,8 +27,6 @@
 	}
 
 	.top-bar {
-		padding: 0 40px;
-
 		display: flex;
 		align-items: center;
 		flex-direction: row;
@@ -36,7 +35,7 @@
 		width: 100%;
 
 		.top-bar-title {
-			padding: 1.5rem 1rem;
+			padding: 1.5rem 0.7rem;
 		}
 	}
 

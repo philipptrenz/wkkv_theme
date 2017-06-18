@@ -27,6 +27,7 @@
 	<?php do_action( 'foundationpress_layout_start' ); ?>
 
 	<header class="site-header" role="banner">
+	<div class="row">
 		<div class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle() ?>>
 			<div class="title-bar-left">
 
@@ -66,6 +67,7 @@
 				<?php endif; ?>
 			</div>
 		</nav>
+		</div>
 	</header>
 
 	<section class="container <?php if (is_front_page()) echo 'front-page'?>" >
