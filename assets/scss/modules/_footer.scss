@@ -4,15 +4,49 @@
   margin: 0 auto;
   border-top: 1px solid $medium-gray;
   margin-top: rem-calc(60);
-}
 
-.footer {
-  @include grid-row();
-  padding: rem-calc(30) 0;
+  background-color: $wkkv-green;
+
+  * {
+      color: $white;
+  }
+
+  a:hover {
+    color: $white;
+    font-weight: bold;
+  }
+
+  .widget {
+    padding-bottom: 25px;
+  }
+
+  /* No offset for first element */
+  .widget:first-child {
+    margin-left: 0;
+  }
+
+  h6 {
+    font-size: 24px;
+    padding-bottom: 8px;
+  }
 
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+
+    li {
+      padding-bottom: 10px;
+      display: block;
+
+      a {
+        padding: 0;
+      }
+    }
   }
+}
+
+.footer {
+  @include grid-row();
+  padding: rem-calc(30) 0;
 }

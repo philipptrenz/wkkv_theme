@@ -70,69 +70,7 @@ get_header(); ?>
 
 </section>
 
-<!--Orbit-Slider
-<section class="container" >
-
-<div class="events-wrap" role="main">
-
-	<div class="row padding-big"> 
-		<div class="orbit" role="region" data-orbit>
-
-			<?php get_sidebar(); ?>
-
-
-			<script>
-			var containers = document.getElementsByClassName('tribe-list-widget');
-				for (var i = 0; i < containers.length; i++) {
-					containers[i].classList.add("orbit-container");
-				}
-
-				var elements = document.getElementsByClassName('tribe-events-first');
-				for (var i = 0; i < elements.length; i++) {
-					elements[i].classList.add("orbit-slide");
-				}
-			</script>
-			<style>
-			.sidebar {
-				width: 100%;
-
-			}
-			.sidebar h6 {
-				display: none;
-			}
-
-			.sidebar li {
-				height: 200px;
-				background: grey;
-			}
-			.tribe-events-widget-link {
-				display: none;
-			}
-			</style>
-
-
-			<nav class="orbit-bullets">
-				<button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
-				<button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-				<button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
-				<button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
-			</nav>
-		</div> 
-	</div>
-
-	<div class="row">
-		<div class="large-offset-1 large-12 medium-offset-1 medium-11 small-14 columns">
-			
-		</div>
-	</div>
-
-</div>
-
-</section>
-<section class="container" >
--->
-
-<?php include 'help.php';?>
+<!--<?php include 'help.php';?>-->
 
 <!--Calendar-->
 <div class="calendar-wrap" role="main">
@@ -143,7 +81,51 @@ get_header(); ?>
     </div>
 
     <div class="large-13 medium-13 small-14 column">
-      <article class="calendar-content"></article>
+
+	    <div class="events-border">
+	      <div class="orbit" role="region" data-orbit>
+
+				<?php get_sidebar(); ?>
+
+
+				<script>
+				var containers = document.getElementsByClassName('tribe-list-widget');
+					for (var i = 0; i < containers.length; i++) {
+						containers[i].classList.add("orbit-container");
+					}
+
+					var elements = document.getElementsByClassName('tribe-events-first');
+					for (var i = 0; i < elements.length; i++) {
+						elements[i].classList.add("orbit-slide");
+					}
+				</script>
+				<style>
+				.sidebar {
+					width: 100%;
+
+				}
+				.sidebar h6 {
+					display: none;
+				}
+
+				.sidebar li {
+					height: 200px;
+					/*background: grey;*/
+				}
+				.tribe-events-widget-link {
+					display: none;
+				}
+				</style>
+
+
+				<nav class="orbit-bullets">
+					<button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+					<button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+					<button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+					<button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+				</nav>
+			</div> 
+		</div>
     </div>
     
   </div>
