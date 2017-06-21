@@ -36,8 +36,6 @@ h1-sideways {
 	background-color: $wkkv-green;
 	width: 100%;
 
-
-
 	.main-content {
 		margin-top: 40px;
 		color: $white;
@@ -49,6 +47,12 @@ h1-sideways {
 		border: 2px solid $white;
 		border-radius: 5px;
 	}
+}
+
+.logo-text-bottom {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
 }
 
 .calendar-wrap {

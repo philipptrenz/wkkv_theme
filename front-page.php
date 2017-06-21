@@ -19,20 +19,16 @@ get_header(); ?>
 <div class="main-wrap" role="main">
 
   <!--Logo-->
-	<div class="row">
-		<div class="large-offset-0 large-7 small-offset-1 small-12 column front-page-logo">
+	<div class="row" data-equalizer>
+		<div class="large-offset-1 large-6 medium-7 hide-for-small-only column" data-equalizer-watch>
 			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/logo_white_pur.svg" style="width: 100%;">
 		</div>
 
-		<div class="large-offset-0 large-7 small-offset-1 small-12 column front-page-logo">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/logo_white_text_pur.svg" style="width: 100%;">
+		<div class="large-6 medium-7 small-14 column end logo-text-bottom" data-equalizer-watch>
+			<img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/logo_white_text_pur.svg" style="width: 100%;">
 		</div>
-	</div>
 
-  <!--Abouttext-->
-	<div class="row ">
-
-		<div class="large-offset-7 large-7 small-offset-1 small-12 columns">
+		<div class="large-offset-7 large-6 medium-offset-7 medium-7 small-14 end columns">
 			<article class="main-content">
 			<?php if ( have_posts() ) : ?>
 
