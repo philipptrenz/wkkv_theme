@@ -1,5 +1,38 @@
+//https://gist.github.com/brianmcallister/2932463
+@mixin square($ratio: 1 1) {
+  @if length($ratio) < 2 or length($ratio) > 2 {
+    @warn "$ratio must be a list with two values.";
+  }
+
+  $width: 100%;
+  $height: percentage(nth($ratio, 2) / nth($ratio, 1));
+  
+  width: $width;
+  height: 0;
+  padding-bottom: $height;
+}
+
+h1 {
+        font-size: 5vw;
+        color: $wkkv-green;
+
+
+         writing-mode:sideways-lr;
+         margin-bottom: 0;
+
+        @media only screen and (max-width: 40em) {
+            margin-bottom: 40px;
+            text-align: center;
+            writing-mode: horizontal-tb;
+        }
+    }
+
+h1-sideways {
+   
+}
+
 .front-page {
-	padding: 80px 0 40px;
+	padding: 80px 0 80px;
 	background-color: $wkkv-green;
 	width: 100%;
 
@@ -13,8 +46,39 @@
 	article {
 		width: 100%;
 		padding: 15px;
-
 		border: 2px solid $white;
 		border-radius: 5px;
 	}
+}
+
+.calendar-wrap {
+    padding: 80px 0 80px;
+
+    .calendar-content {
+		color: $dark-gray;
+    }
+
+    article {
+		width: 100%;
+        //height spaeter lieber dynamisch!
+        height: 250px;
+		padding: 15px;
+		border: 2px solid $wkkv-green;
+		border-radius: 5px;
+	}
+}
+
+.offer-wrap {
+    padding: 0 0 40px;
+    margin-left: rem-calc(20);
+
+    .boxColor {
+        @include square();
+        background-color: $mkkv-red;
+    }
+
+    .boxLink {
+        @include square();
+
+    }
 }

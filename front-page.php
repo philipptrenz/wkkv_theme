@@ -18,22 +18,21 @@ get_header(); ?>
 
 <div class="main-wrap" role="main">
 
+  <!--Logo-->
 	<div class="row">
-		<div class="large-offset-1 large-5 small-13 columns front-page-logo">
+		<div class="large-offset-0 large-7 small-offset-1 small-12 column front-page-logo">
 			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/logo_white_pur.svg" style="width: 100%;">
 		</div>
 
-		<div class="large-offset-1 large-5 small-13 columns front-page-logo">
+		<div class="large-offset-0 large-7 small-offset-1 small-12 column front-page-logo">
 			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/logo_white_text_pur.svg" style="width: 100%;">
 		</div>
-
-		<div class="large-1"></div>
-
 	</div>
 
+  <!--Abouttext-->
 	<div class="row ">
 
-		<div class="large-offset-7 large-5 small-13 columns">
+		<div class="large-offset-7 large-7 small-offset-1 small-12 columns">
 			<article class="main-content">
 			<?php if ( have_posts() ) : ?>
 
@@ -74,6 +73,8 @@ get_header(); ?>
 </div>
 
 </section>
+
+<!--Orbit-Slider
 <section class="container" >
 
 <div class="events-wrap" role="main">
@@ -124,7 +125,7 @@ get_header(); ?>
 	</div>
 
 	<div class="row">
-		<div class="large-offset-1 large-11 medium-offset-1 medium-11 small-13 columns">
+		<div class="large-offset-1 large-12 medium-offset-1 medium-11 small-14 columns">
 			
 		</div>
 	</div>
@@ -133,15 +134,67 @@ get_header(); ?>
 
 </section>
 <section class="container" >
+-->
 
-<div class="second-wrap" role="main">
+<?php include 'help.php';?>
 
-	<div class="row">
-		<div class="large-1 medium-1 small-1 columns">
-			<div style="transform: rotate(90deg);transform-origin: left top 0;">Angebote</div>
-		</div>
-	</div>
+<!--Calendar-->
+<div class="calendar-wrap" role="main">
 
+  <div class="row">
+    <div class="large-1 medium-1 small-14 column">
+      <h1 class="">TERMINE</h1>
+    </div>
+
+    <div class="large-13 medium-13 small-14 column">
+      <article class="calendar-content"></article>
+    </div>
+    
+  </div>
+</div>
+
+<!--Offer-->
+<div class="offer-wrap" role="main">
+
+  <div class="row collapse">
+    <div class="large-1 medium-1 small-14 columns">
+      <h1 class="">ANGEBOT</h1>
+    </div>
+
+    <div class="show-for-medium large-4 medium-6 small-14 columns end">
+      <div class="boxColor"></div>
+    </div>
+    <div class="large-4 medium-6 small-14 columns end">
+      <div class="boxLink">Ueberschrift</div>
+    </div>
+   </div>
+
+
+  <div class="row collapse">
+    <div class="large-offset-1 large-4 medium-offset-1 medium-6 small-14 columns end">
+      <div class="boxLink">Ueberschrift</div>
+    </div>
+    <div class="show-for-medium large-4 medium-6 small-14 column end">
+      <div class="boxColor"></div>
+    </div>
+  </div>
+
+  <div class="row collapse">
+    <div class="large-offset-1 medium-offset-1 show-for-medium large-4 medium-6 small-14 column end">
+      <div class="boxColor"></div>
+    </div>
+    <div class="large-4  medium-6 small-14 columns end">
+      <div class="boxLink">Ueberschrift</div>
+    </div>
+    <div class="show-for-medium large-offset-0 large-4 medium-offset-1 medium-6 small-14 column end">
+      <div class="boxColor"></div>
+    </div>
+  </div>
+  <div class="row collapse">
+    <div class="large-offset-9 large-4 medium-offset-1 medium-6 small-14 columns end">
+      <div class="boxLink">Ueberschrift</div>
+    </div>
+  </div>
 </div>
 
 
