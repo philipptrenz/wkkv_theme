@@ -70,7 +70,7 @@ h1-sideways {
 
 .offer-wrap {
     padding: 0 0 40px;
-    margin-left: rem-calc(20);
+    margin: 0 rem-calc(20);
 
     .boxColor {
         @include square();

@@ -74,6 +74,13 @@
   Add your scss files below to structure your project styles
 */
 
+
+// Fonts
+@font-face {font-family: 'NimbusSansRound-Regular';src: url('../fonts/33BC99_0_0.eot');src: url('../fonts/33BC99_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/33BC99_0_0.woff2') format('woff2'),url('../fonts/33BC99_0_0.woff') format('woff'),url('../fonts/33BC99_0_0.ttf') format('truetype');}  
+@font-face {font-family: 'NimbusSansRound-Medium';src: url('../fonts/33BC99_1_0.eot');src: url('../fonts/33BC99_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/33BC99_1_0.woff2') format('woff2'),url('../fonts/33BC99_1_0.woff') format('woff'),url('../fonts/33BC99_1_0.ttf') format('truetype');}  
+@font-face {font-family: 'NimbusSansRound-RegularItalic';src: url('../fonts/33BC99_2_0.eot');src: url('../fonts/33BC99_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/33BC99_2_0.woff2') format('woff2'),url('../fonts/33BC99_2_0.woff') format('woff'),url('../fonts/33BC99_2_0.ttf') format('truetype');}
+
+
 // Modules
 @import "modules/navigation";
 @import "modules/content";

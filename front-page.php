@@ -164,17 +164,22 @@ get_header(); ?>
     <div class="large-4  medium-6 small-14 columns end">
       <div class="boxLink">Ueberschrift</div>
     </div>
-    <div class="show-for-medium large-offset-0 large-4 medium-offset-1 medium-6 small-14 column end">
+    <div class="show-for-medium large-offset-0 large-4 medium-offset-7 medium-6 small-14 column end">
       <div class="boxColor"></div>
     </div>
   </div>
   <div class="row collapse">
-    <div class="large-offset-9 large-4 medium-offset-1 medium-6 small-14 columns end">
+    <div class="large-offset-9 large-4 medium-offset-7 medium-6 small-14 columns end">
       <div class="boxLink">Ueberschrift</div>
     </div>
   </div>
 </div>
 
+<div class="map-wrap" role="main">
+
+	<?php get_sidebar( 'footer-widgets' ); ?>
+
+</div>
 
 
 <?php get_footer();
