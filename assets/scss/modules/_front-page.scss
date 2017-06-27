@@ -13,19 +13,37 @@
 }
 
 h1 {
-        font-size: 5vw;
-        color: $wkkv-green;
+    
+    color: $wkkv-green;
+    text-transform: uppercase;
+    margin-bottom: 0;
 
-
-         writing-mode:sideways-lr;
-         margin-bottom: 0;
-
-        @media only screen and (max-width: 40em) {
-            margin-bottom: 40px;
-            text-align: center;
-            writing-mode: horizontal-tb;
-        }
+    @include breakpoint(small only){ 
+        margin-bottom: 40px;
+        text-align: center;
+        writing-mode: horizontal-tb;
+        font-size: 2em;
     }
+
+    @include breakpoint(medium){ 
+      font-size: 2em;
+
+      -ms-writing-mode: tb-rl; 
+      -webkit-writing-mode: vertical-rl;
+      -moz-writing-mode: vertical-rl;
+      -ms-writing-mode: vertical-rl;
+      writing-mode: vertical-rl;
+      
+      -ms-transform: rotate(180deg); 
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+
+    @include breakpoint(large){ 
+      font-size: 3em;
+    }
+
+}
 
 
 
