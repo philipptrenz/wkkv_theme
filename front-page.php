@@ -16,7 +16,7 @@
 get_header(); ?>
 
 
-<div class="main-wrap" role="main">
+<div class="main-wrap front-page-element" role="main">
 
   <!--Logo-->
 	<div class="row" data-equalizer>
@@ -75,7 +75,7 @@ get_header(); ?>
 <!--<?php include 'help.php';?>-->
 
 <!--Calendar-->
-<div class="calendar-wrap" role="main">
+<div class="calendar-wrap front-page-element" role="main">
 
   <div class="row">
     <div class="large-1 medium-1 small-14 column">
@@ -133,51 +133,76 @@ get_header(); ?>
   </div>
 </div>
 
-<!--Offer-->
-<div class="offer-wrap" role="main">
+<!-- Offer -->
+<div class="offer-wrap front-page-element" role="main">
 
-  <div class="row collapse">
+  <div class="row ">
     <div class="large-1 medium-1 small-14 columns">
       <h1 class="sideways">ANGEBOT</h1>
     </div>
 
-    <div class="show-for-medium large-4 medium-6 small-14 columns end">
-      <div class="boxColor"></div>
-    </div>
-    <div class="large-4 medium-6 small-14 columns end">
-      <div class="boxLink">Ueberschrift</div>
-    </div>
-   </div>
+    <div class="arge-13 medium-13 small-14 columns end">
+      
+    <!-- inner grid -->
+
+		<div class="row small-up-12 collapse">
+		    <div class="show-for-medium large-4 medium-6 small-14 columns end">
+		      <div class="boxColor"></div>
+		    </div>
+		    <div class="large-4 medium-6 small-14 columns end">
+		      <div class="boxLink">Ueberschrift</div>
+		    </div>
+	   </div>
 
 
-  <div class="row collapse">
-    <div class="large-offset-1 large-4 medium-offset-1 medium-6 small-14 columns end">
-      <div class="boxLink">Ueberschrift</div>
-    </div>
-    <div class="show-for-medium large-4 medium-6 small-14 column end">
-      <div class="boxColor"></div>
-    </div>
-  </div>
+	  <div class="row small-up-12 collapse">
+		    <div class="large-4 medium-6 small-14 columns end">
+		      <div class="boxLink">Ueberschrift</div>
+		    </div>
+		    <div class="show-for-medium large-4 medium-6 small-14 column end">
+		      <div class="boxColor"></div>
+		    </div>
+	  </div>
 
-  <div class="row collapse">
-    <div class="large-offset-1 medium-offset-1 show-for-medium large-4 medium-6 small-14 column end">
-      <div class="boxColor"></div>
+	  <div class="row small-up-12 collapse">
+		    <div class=" show-for-medium large-4 medium-6 small-14 column end">
+		      <div class="boxColor"></div>
+		    </div>
+		    <div class="large-4 medium-6 small-14 columns end">
+		      <div class="boxLink">Ueberschrift</div>
+		    </div>
+		    <div class="show-for-medium-only large-4 medium-6 small-14 columns end" id="last-offer-content-for-medium">
+		      <div class="boxLink">Last content on medium</div>
+		    </div>
+		    <div class="show-for-medium large-offset-0 large-4 medium-6 small-14 column end">
+		      <div class="boxColor"></div>
+		    </div>
+	  </div>
+
+
+	  <div class="row small-up-12 collapse">
+		    <div class="hide-for-medium-only large-offset-8 large-4 medium-offset-6 medium-6 small-14 columns end" id="last-offer-content-for-not-medium">
+		    	<!-- Content gets copied from #last-offer-content-for-medium, do not edit here -->
+		    	<script type="text/javascript">
+		    		$(document).ready(function() {
+		    			var firstDivContent = document.getElementById('last-offer-content-for-medium');
+						var secondDivContent = document.getElementById('last-offer-content-for-not-medium');
+						secondDivContent.innerHTML = firstDivContent.innerHTML;
+		    		});
+				</script>
+		    </div>
+	  </div>
+
+    <!-- inner grid end -->
+
+
     </div>
-    <div class="large-4  medium-6 small-14 columns end">
-      <div class="boxLink">Ueberschrift</div>
-    </div>
-    <div class="show-for-medium large-offset-0 large-4 medium-offset-7 medium-6 small-14 column end">
-      <div class="boxColor"></div>
-    </div>
-  </div>
-  <div class="row collapse">
-    <div class="large-offset-9 large-4 medium-offset-7 medium-6 small-14 columns end">
-      <div class="boxLink">Ueberschrift</div>
-    </div>
-  </div>
+    
 </div>
 
-<div class="map-wrap" role="main">
+</div>
+
+<div class="map-wrap front-page-element" role="main">
 
 	<div class="row">
 		<div class="large-1 medium-1 small-14 columns">

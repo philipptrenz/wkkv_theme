@@ -49,17 +49,23 @@
 
 	}
 
-
-
-}
-
-.main-wrap {
-	padding-top: 80px;
-}
-
-.top-logo {
+	.top-logo {
 		max-width: 420px;
 	}
+}
+
+.container {
+	 @include breakpoint(small only){ 
+       margin-top: 2rem;
+    }
+
+    @include breakpoint(medium){
+    	margin-top: 6rem;
+    }
+
+}
+
+
 
 
 
