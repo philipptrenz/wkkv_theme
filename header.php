@@ -46,15 +46,8 @@
 				<div class="site-desktop-title top-bar-title">
 
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-					<?php 
-	
-						if ( function_exists( 'the_custom_logo' ) ) {
-							the_custom_logo();
-						} else {
-							bloginfo( 'name' );
-						}
 
-					?>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/logo_black_pur.svg" width="417" height="286" class="custom-logo">
 					</a>
 
 				</div>

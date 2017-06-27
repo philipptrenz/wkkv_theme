@@ -50,10 +50,24 @@ sideways {
 	}
 }
 
-.logo-text-bottom {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
+
+
+
+.logo-text-wrapper {
+
+  height: 100%;
+  width: 100%;
+
+  position: relative;
+
+  .logo-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+
+  }
+  
 }
 
 .calendar-wrap {
@@ -86,8 +100,5 @@ sideways {
 
 .map-wrap {
 
-  #fancy-map-widget * {
-    max-width: 100%;
-  }
-
+ 
 }
