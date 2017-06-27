@@ -15,6 +15,9 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 	// Enqueue the main Stylesheet.
 	wp_enqueue_style( 'main-stylesheet', get_template_directory_uri() . '/assets/stylesheets/foundation.css', array(), '2.9.2', 'all' );
 
+	// modernizr adds not supported features to browsers via js
+	wp_enqueue_script( 'modernizr',  get_template_directory_uri() . '/assets/javascript/modernizr-custom.js', array(), '1.1.1', 'all' );
+
 	// Deregister the jquery version bundled with WordPress.
 	wp_deregister_script( 'jquery' );
 
