@@ -32,7 +32,7 @@ function foundationpress_sidebar_widgets() {
 		'id' => 'map-widget',
 		'name' => __( 'Karten Widget-Bereich', 'foundationpress' ),
 		'description' => __( 'Drag the map widget to this container', 'foundationpress' ),
-		'before_widget' => '<div id="%1$s" class="large-14 medium-14 small-14 columns widget %2$s">',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h6>',
 		'after_title' => '</h6>',

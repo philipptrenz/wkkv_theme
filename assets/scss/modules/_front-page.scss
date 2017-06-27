@@ -27,7 +27,8 @@ h1 {
         }
     }
 
-h1-sideways {
+sideways {
+
    
 }
 
@@ -81,4 +82,12 @@ h1-sideways {
         @include square();
 
     }
+}
+
+.map-wrap {
+
+  #fancy-map-widget * {
+    max-width: 100%;
+  }
+
 }

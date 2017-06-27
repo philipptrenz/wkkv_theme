@@ -77,7 +77,7 @@ get_header(); ?>
 
   <div class="row">
     <div class="large-1 medium-1 small-14 column">
-      <h1 class="">TERMINE</h1>
+      <h1 class="sideways">TERMINE</h1>
     </div>
 
     <div class="large-13 medium-13 small-14 column">
@@ -136,7 +136,7 @@ get_header(); ?>
 
   <div class="row collapse">
     <div class="large-1 medium-1 small-14 columns">
-      <h1 class="">ANGEBOT</h1>
+      <h1 class="sideways">ANGEBOT</h1>
     </div>
 
     <div class="show-for-medium large-4 medium-6 small-14 columns end">
@@ -177,7 +177,17 @@ get_header(); ?>
 
 <div class="map-wrap" role="main">
 
-	<?php get_sidebar( 'footer-widgets' ); ?>
+	<div class="row ">
+		<div class="large-1 medium-1 small-14 columns">
+			<h1 class="sideways">Karte</h1>
+		</div>
+
+		<div class="large-13 medium-13 small-14 columns end" id="fancy-map-widget">
+			
+			<?php get_sidebar( 'map-widget' ); ?>
+
+		</div>
+	</div>
 
 </div>
 
