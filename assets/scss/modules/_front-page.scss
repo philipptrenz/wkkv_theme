@@ -12,9 +12,6 @@
   padding-bottom: $height;
 }
 
-<<<<<<< HEAD
-h1.sideways {
-=======
 @mixin rotate($degrees) {
     -webkit-transform: rotate($degrees);
     -moz-transform: rotate($degrees);
@@ -39,8 +36,7 @@ h1.sideways {
 	writing-mode: $mode;
 }
 
-h1 {
->>>>>>> 67897a19b63c7044a689d1689c85ee33c7f35fc6
+h1.sideways {
     
     color: $wkkv-green;
     text-transform: uppercase;
