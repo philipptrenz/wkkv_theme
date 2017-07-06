@@ -147,15 +147,14 @@ get_header(); ?>
 
 		<div class="row small-up-12 collapse">
 		    <div class="show-for-medium large-4 medium-6 small-14 columns end">
-		      <div class="img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/test.jpg');">
-				<div class="boxColor-blue" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/arrow.svg');">
+		      <div class="grid-img grid-img-1">
+				<div class="boxColor-blue">
 				</div>
 			  </div>
 		    </div>
 		    <div class="large-4 medium-6 small-14 columns end">
 		      <a href="#">
-				<div class="boxLink-blue" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/ausstellung_green.svg');">
-				</div>
+				<div class="boxLink-blue"></div>
 			  </a>
 		    </div>
 	   </div>
@@ -164,13 +163,12 @@ get_header(); ?>
 	  <div class="row small-up-12 collapse">
 		    <div class="large-4 medium-6 small-14 columns end">
 		      <a href="#">
-				<div class="boxLink-yellow" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/kalender_green.svg');">
-				</div>
+				<div class="boxLink-yellow"></div>
 			  </a>
 		    </div>
 		    <div class="show-for-medium large-4 medium-6 small-14 column end">
-		      <div class="img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/test.jpg');">
-				<div class="boxColor-yellow" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/arrow.svg');">
+		      <div class="grid-img grid-img-2">
+				<div class="boxColor-yellow">
 				</div>
 			  </div>
 		    </div>
@@ -178,26 +176,24 @@ get_header(); ?>
 
 	  <div class="row small-up-12 collapse">
 		    <div class=" show-for-medium large-4 medium-6 small-14 column end">
-		      <div class="img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/test.jpg');">
-				<div class="boxColor-red" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/arrow.svg');">
+		      <div class="grid-img grid-img-3">
+				<div class="boxColor-red">
 				</div>
 			  </div>
 		    </div>
 		    <div class="large-4 medium-6 small-14 columns end">
 		      <a href="#">
-				<div class="boxLink-red" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/raeumlichkeiten_green.svg');">
-				</div>
+				<div class="boxLink-red"></div>
 			  </a>
 		    </div>
 		    <div class="show-for-medium-only large-4 medium-6 small-14 columns end" id="last-offer-content-for-medium">
 		       <a href="#">
-				<div class="boxLink-grey" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/ausstellung_green.svg');">
-				</div>
+				<div class="boxLink-grey"></div>
 			  </a>
 		    </div>
 		    <div class="show-for-medium large-offset-0 large-4 medium-6 small-14 column end">
-		      <div class="img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/test.jpg');">
-				<div class="boxColor-grey" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/arrow.svg');">
+		      <div class="grid-img grid-img-4">
+				<div class="boxColor-grey">
 				</div>
 			  </div>
 		    </div>
