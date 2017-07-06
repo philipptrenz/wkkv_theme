@@ -12,7 +12,35 @@
   padding-bottom: $height;
 }
 
+<<<<<<< HEAD
 h1.sideways {
+=======
+@mixin rotate($degrees) {
+    -webkit-transform: rotate($degrees);
+    -moz-transform: rotate($degrees);
+    -ms-transform: rotate($degrees);
+    -o-transform: rotate($degrees);
+    transform: rotate($degrees);
+}
+
+//https://gist.github.com/pavlvs/5641702
+@mixin transition($transition-property, $transition-time, $method) {
+	-webkit-transition: $transition-property $transition-time $method;
+	-moz-transition: $transition-property $transition-time $method;
+	-ms-transition: $transition-property $transition-time $method;
+	-o-transition: $transition-property $transition-time $method;
+	transition: $transition-property $transition-time $method;
+}
+
+@mixin writingMode($mode) {
+	-webkit-writing-mode: $mode;
+	-moz-writing-mode: $mode;
+	-ms-writing-mode: $mode;
+	writing-mode: $mode;
+}
+
+h1 {
+>>>>>>> 67897a19b63c7044a689d1689c85ee33c7f35fc6
     
     color: $wkkv-green;
     text-transform: uppercase;
@@ -21,22 +49,14 @@ h1.sideways {
     @include breakpoint(small only){ 
         margin-bottom: 40px;
         text-align: center;
-        writing-mode: horizontal-tb;
+        @include writingMode(horizontal-tb);
         font-size: 2em;
     }
 
     @include breakpoint(medium){ 
       font-size: 2em;
-
-      -ms-writing-mode: tb-rl; 
-      -webkit-writing-mode: vertical-rl;
-      -moz-writing-mode: vertical-rl;
-      -ms-writing-mode: vertical-rl;
-      writing-mode: vertical-rl;
-      
-      -ms-transform: rotate(180deg); 
-      -webkit-transform: rotate(180deg);
-      transform: rotate(180deg);
+      @include writingMode(vertical-rl);
+	  @include rotate(180deg);
     }
 
     @include breakpoint(large){ 
@@ -129,14 +149,14 @@ h1.sideways {
             background-size:     45%;     
             background-repeat:   no-repeat;
             background-position: center;
-			      transition: background-color 0.5s ease-in-out;
-
             background-image: url('../../assets/images/wkkv/arrow.svg');
 
+      			@include transition(background-color, 0.5s, ease-in-out);
+            
             &-blue {
                 @extend .boxColor;
                 background-color: $mkkv-blue;
-                transform: rotate(180deg);
+                @include rotate(180deg);
                 &:hover {
                      background-color: transparentize($mkkv-blue, .3);;
                 }
@@ -153,7 +173,7 @@ h1.sideways {
             &-red {
                 @extend .boxColor;
                 background-color: $mkkv-red;
-                transform: rotate(180deg);
+                @include rotate(180deg);
 				
                 &:hover {
                      background-color: transparentize($mkkv-red, .3);
@@ -164,7 +184,7 @@ h1.sideways {
                 @extend .boxColor;
                 background-color: $mkkv-grey;
 				@include breakpoint(large){
-                    transform: rotate(270deg);
+                    @include rotate(270deg);
                 }
                 &:hover {
 					 background-color: transparentize($mkkv-grey, .3);
