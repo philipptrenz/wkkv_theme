@@ -154,7 +154,7 @@ get_header(); ?>
 		    </div>
 		    <div class="large-4 medium-6 small-14 columns end">
 		      <a href="#">
-				<div class="boxLink-blue" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/ausstellung.svg');">
+				<div class="boxLink-blue" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/ausstellung_green.svg');">
 				</div>
 			  </a>
 		    </div>
@@ -164,7 +164,7 @@ get_header(); ?>
 	  <div class="row small-up-12 collapse">
 		    <div class="large-4 medium-6 small-14 columns end">
 		      <a href="#">
-				<div class="boxLink-yellow" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/ausstellung.svg');">
+				<div class="boxLink-yellow" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/kalender_green.svg');">
 				</div>
 			  </a>
 		    </div>
@@ -185,13 +185,13 @@ get_header(); ?>
 		    </div>
 		    <div class="large-4 medium-6 small-14 columns end">
 		      <a href="#">
-				<div class="boxLink-red" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/ausstellung.svg');">
+				<div class="boxLink-red" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/raeumlichkeiten_green.svg');">
 				</div>
 			  </a>
 		    </div>
 		    <div class="show-for-medium-only large-4 medium-6 small-14 columns end" id="last-offer-content-for-medium">
 		       <a href="#">
-				<div class="boxLink-grey" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/ausstellung.svg');">
+				<div class="boxLink-grey" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/ausstellung_green.svg');">
 				</div>
 			  </a>
 		    </div>
