@@ -10,29 +10,9 @@
     <div class="large-13 medium-13 small-14 column">
 
 	    <div class="events-border">
-	      <div class="orbit" role="region" data-orbit>
+	      <div class="orbit" id="calendar-orbit-slider" role="region" data-orbit>
 
 				<?php dynamic_sidebar( 'calendar-widget' ); ?>
-
-				<script>
-					$( document ).ready(function () {
-						var numButtons = $('ol.tribe-list-widget li').length;
-						var buttonArray = $('.orbit-bullets button');
-						for (var i = numButtons; i < buttonArray.length; i++) {
-							buttonArray[i].remove();
-						}
-					});
-
-					var containers = document.getElementsByClassName('tribe-list-widget');
-					for (var i = 0; i < containers.length; i++) {
-						containers[i].classList.add("orbit-container");
-					}
-
-					var elements = document.getElementsByClassName('tribe-events-first');
-					for (var i = 0; i < elements.length; i++) {
-						elements[i].classList.add("orbit-slide");
-					}
-				</script>
 
 				<nav class="orbit-bullets">
 					<button data-slide="0" class="is-active"></button>
@@ -49,7 +29,31 @@
 			</div> 
 		</div>
     </div>
-    
+    <script>
+		/*
+		 * Hack for non Pro version The Events Calendar widget
+		 */
+		var nonProVersionExists = document.getElementById("calendar-orbit-slider").getElementsByClassName("tribe-events-list-widget").length > 0;
+		if (nonProVersionExists) {
+			console.log("Seems to be non pro version The Events Calendar widget");
+			$( document ).ready(function () {
+				var numButtons = $('ol.tribe-list-widget li').length;
+				var buttonArray = $('.orbit-bullets button');
+				for (var i = numButtons; i < buttonArray.length; i++) {
+					buttonArray[i].remove();
+				}
+			});
+			var containers = document.getElementsByClassName('tribe-list-widget');
+			for (var i = 0; i < containers.length; i++) {
+				containers[i].classList.add("orbit-container");
+			}
+			var elements = document.getElementsByClassName('tribe-events-first');
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].classList.add("orbit-slide");
+			}
+		}
+	</script>
+
   </div>
 </div>
 <?php } ?>
