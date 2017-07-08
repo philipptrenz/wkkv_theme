@@ -74,64 +74,11 @@ get_header(); ?>
 
 <!--<?php include 'help.php';?>-->
 
-<!--Calendar-->
-<div class="calendar-wrap front-page-element" role="main">
+<?php do_action( 'foundationpress_before_footer' ); ?>
 
-  <div class="row">
-    <div class="large-1 medium-1 small-14 column">
-      <h1 class="sideways">TERMINE</h1>
-    </div>
+<?php get_sidebar( 'calendar-widget' ); ?>
 
-    <div class="large-13 medium-13 small-14 column">
-
-	    <div class="events-border">
-	      <div class="orbit" role="region" data-orbit>
-
-				<?php get_sidebar(); ?>
-
-
-				<script>
-				var containers = document.getElementsByClassName('tribe-list-widget');
-					for (var i = 0; i < containers.length; i++) {
-						containers[i].classList.add("orbit-container");
-					}
-
-					var elements = document.getElementsByClassName('tribe-events-first');
-					for (var i = 0; i < elements.length; i++) {
-						elements[i].classList.add("orbit-slide");
-					}
-				</script>
-				<style>
-				.sidebar {
-					width: 100%;
-
-				}
-				.sidebar h6 {
-					display: none;
-				}
-
-				.sidebar li {
-					height: 200px;
-					/*background: grey;*/
-				}
-				.tribe-events-widget-link {
-					display: none;
-				}
-				</style>
-
-
-				<nav class="orbit-bullets">
-					<button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
-					<button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-					<button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
-					<button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
-				</nav>
-			</div> 
-		</div>
-    </div>
-    
-  </div>
-</div>
+<?php do_action( 'foundationpress_after_footer' ); ?>
 
 <!-- Offer -->
 <div class="offer-wrap front-page-element" role="main">

@@ -103,12 +103,66 @@ h1.sideways {
 .calendar-wrap {
 
     .calendar-content {
-    color: $dark-gray;
+        color: $dark-gray;
     }
 
     .events-border {
-    border: 2px solid $wkkv-green;
-    border-radius: 5px;
+        border: 2px solid $wkkv-green;
+        border-radius: 5px;
+        padding: 20px 20px 0;
+
+        .widget {
+            min-height: 7.5rem;
+
+            .sidebar {
+                    width: 100%;
+
+            }
+            .sidebar h6 {
+                display: none;
+            }
+
+            
+            .tribe-events-widget-link {
+                display: none;
+            }
+
+            p {
+                // no events text
+                padding-top: 2.5rem;
+                font-size: 1.2em;
+                color: $wkkv-green;
+                text-align: center;
+            }
+        }
+
+
+        .orbit-bullets button {
+            width: 2rem; height: 2rem;
+
+            border-radius: 0 !important;
+
+            background: url('../../assets/images/wkkv/rhombus.svg') no-repeat center center;
+            -webkit-background-size: contain;
+            -moz-background-size: contain;
+            -o-background-size: contain;
+            background-size: contain;
+
+            &.is-active {
+                background-image: url('../../assets/images/wkkv/rhombus_nonfilled.svg');
+            }
+
+            &:hover {
+                cursor: pointer; cursor: hand;
+            }
+        }
+
+        ol {
+
+            li {
+
+            }
+        }
   }
 }
 
