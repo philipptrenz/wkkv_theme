@@ -58,6 +58,7 @@ $has_address_details = ! empty( $city_name ) || ! empty( $region_name ) || ! emp
 	}
 	?>
 
+	<!--
 	<div class="list-date">
 		<?php
 		if (
@@ -91,9 +92,16 @@ $has_address_details = ! empty( $city_name ) || ! empty( $region_name ) || ! emp
 		<span class="list-daynumber"><?php echo apply_filters( 'tribe-mini_helper_tribe_events_ajax_list_daynumber',
 			date_i18n( 'd', $post_date ), $post_date, $mini_cal_event_atts['class'] ); ?></span>
 		</div>
+		-->
 
 		<div class="list-info">
 			<?php do_action( 'tribe_events_list_widget_before_the_event_title' ); ?>
+			
+
+			<div class="tribe-events-duration">
+				<?php echo tribe_events_event_schedule_details(); ?>
+			</div>
+
 			<h2 class="tribe-events-title">
 					<a href="<?php echo esc_url( tribe_get_event_link() ); ?>" rel="bookmark"><?php the_title(); ?></a>
 			</h2>
@@ -101,9 +109,6 @@ $has_address_details = ! empty( $city_name ) || ! empty( $region_name ) || ! emp
 
 			<?php do_action( 'tribe_events_list_widget_before_the_meta' ) ?>
 
-			<div class="tribe-events-duration">
-				<?php echo tribe_events_event_schedule_details(); ?>
-			</div>
 
 			<?php if ( isset( $cost ) && $cost && tribe_get_cost() != '' ) : ?>
 				<span class="tribe-events-divider">|</span>
@@ -197,3 +202,63 @@ $has_address_details = ! empty( $city_name ) || ! empty( $region_name ) || ! emp
 		</div>
 	<?php do_action( 'tribe_events_list_widget_after_the_meta' ) ?>
 </div> <!-- .list-info -->
+
+
+
+
+<style>
+	
+	.tribe-mini-calendar-event {
+		width: 100%;
+		margin: 0;
+		border: none;
+	}
+
+	.tribe-mini-calendar-event a {
+		color: rgba(60,81,84,1) !important;
+	}
+
+	.tribe-mini-calendar-event a:hover {
+		font-weight: bold;
+	}
+
+	.tribe-mini-calendar-event a:focus {
+		font-weight: bold;
+	}
+
+	.tribe-mini-calendar-event > div {
+		width: 100% !important;
+		display: block;
+	}
+
+	.tribe-mini-calendar-event .list-info {
+		font-size: 3vmax;
+		color: #3C5154;
+		text-align: center;
+	}
+
+	.tribe-mini-calendar-event .list-info .tribe-events-duration {
+		padding-bottom: 20px;
+		
+	}
+
+	.tribe-mini-calendar-event .list-info .tribe-events-venue {
+		padding: 0;
+		margin: 0;
+		
+	}
+
+	.tribe-mini-calendar-event .list-info h2 {
+		text-transform: uppercase;
+		font-size: 4vmax;
+		line-height: 90%;
+		margin: 0;
+		padding-bottom: 15px;
+	}
+	.tribe-mini-calendar-event .list-info h2:hover {
+		color: rgba(60,81,84,0.6);
+	}
+
+
+
+</style>

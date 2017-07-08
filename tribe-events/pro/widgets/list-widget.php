@@ -40,7 +40,7 @@ $link_to_all = tribe_events_get_list_widget_view_all_link( $instance );
 
 ?>
 
-<ol class="orbit-container">
+<ol class="orbit-container" id="wkkv-events-list-widget">
 
 <?php
 

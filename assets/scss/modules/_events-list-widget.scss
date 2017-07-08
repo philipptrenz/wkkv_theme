@@ -1,0 +1,56 @@
+#wkkv-events-list-widget {
+
+	.tribe-mini-calendar-event {
+		width: 100%;
+		margin: 0;
+		border: none;
+
+		a {
+			color: rgba(60,81,84,1) !important;
+
+			&:hover, &:focus {
+				font-weight: bold;
+			}
+		}
+
+		& > div {
+			width: 100% !important;
+			display: block;
+		}
+
+		.list-info {
+			font-size: 3vmax;
+			color: #3C5154;
+			text-align: center;
+		}
+	}
+
+
+	.tribe-mini-calendar-event .list-info {
+		font-size: 3vmax;
+		color: #3C5154;
+		text-align: center;
+
+		.tribe-events-duration {
+			padding-bottom: 20px;
+			
+		}
+
+		.tribe-events-venue {
+			padding: 0;
+			margin: 0;
+		}
+
+		h2 {
+			text-transform: uppercase;
+			font-size: 4vmax;
+			line-height: 90%;
+			margin: 0;
+			padding-bottom: 15px;
+
+			&:hover {
+				color: rgba(60,81,84,0.6);
+			}
+		}
+	}
+}
