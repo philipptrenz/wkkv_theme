@@ -36,7 +36,7 @@
 	writing-mode: $mode;
 }
 
-h1 {
+h1.sideways {
     
     color: $wkkv-green;
     text-transform: uppercase;
@@ -103,25 +103,95 @@ h1 {
 .calendar-wrap {
 
     .calendar-content {
-    color: $dark-gray;
+        color: $dark-gray;
     }
 
     .events-border {
-    border: 2px solid $wkkv-green;
-    border-radius: 5px;
+        border: 2px solid $wkkv-green;
+        border-radius: 5px;
+        padding: 20px 20px 0;
+
+        .widget {
+            min-height: 7.5rem;
+
+            .sidebar {
+                    width: 100%;
+
+            }
+            .sidebar h6 {
+                display: none;
+            }
+
+            
+            .tribe-events-widget-link {
+                display: none;
+            }
+
+            p {
+                // no events text
+                padding-top: 2.5rem;
+                font-size: 1.2em;
+                color: $wkkv-green;
+                text-align: center;
+            }
+        }
+
+
+        .orbit-bullets button {
+            width: 2rem; height: 2rem;
+
+            border-radius: 0 !important;
+
+            background: url('../../assets/images/wkkv/rhombus.svg') no-repeat center center;
+            -webkit-background-size: contain;
+            -moz-background-size: contain;
+            -o-background-size: contain;
+            background-size: contain;
+
+            &.is-active {
+                background-image: url('../../assets/images/wkkv/rhombus_nonfilled.svg');
+            }
+
+            &:hover {
+                cursor: pointer; cursor: hand;
+            }
+        }
+
+        ol {
+
+            li {
+
+            }
+        }
   }
 }
 
 .offer-wrap {
     padding: 0 0 40px;
 
+    /*
     @include breakpoint(medium){
          margin-left: rem-calc(20);       
-    }    
+    }  */  
 
-    .img {
+    .grid-img {
         background-repeat:no-repeat;
         background-size: cover;
+
+        background-image: url('../../assets/images/wkkv/grid_image-default.jpg');
+
+        &-1 {
+          //background-image: url('../../assets/images/wkkv/grid_image-1.jpg');
+        }
+        &-2 {
+          //background-image: url('../../assets/images/wkkv/grid_image-2.jpg');
+        }
+        &-3 {
+          //background-image: url('../../assets/images/wkkv/grid_image-3.jpg');
+        }
+        &-4 {
+          //background-image: url('../../assets/images/wkkv/grid_image-4.jpg');
+        }
 		
 
         .boxColor {
@@ -129,8 +199,10 @@ h1 {
             background-size:     45%;     
             background-repeat:   no-repeat;
             background-position: center;
-			@include transition(background-color, 0.5s, ease-in-out);
+            background-image: url('../../assets/images/wkkv/arrow.svg');
 
+      			@include transition(background-color, 0.5s, ease-in-out);
+            
             &-blue {
                 @extend .boxColor;
                 background-color: $mkkv-blue;
@@ -184,7 +256,12 @@ h1 {
             @include breakpoint(small only){
                 background-color: $mkkv-blue;
                 margin-bottom: 40px;
+                background-image: url('../../assets/images/wkkv/boxlink-blue_w.svg');
             }
+            @include breakpoint(medium){ 
+                background-image: url('../../assets/images/wkkv/boxlink-blue.svg');
+            }
+            
         }
 
         &-yellow {
@@ -192,6 +269,10 @@ h1 {
             @include breakpoint(small only){
                 background-color: $mkkv-yellow;
                 margin-bottom: 40px;
+                background-image: url('../../assets/images/wkkv/boxlink-yellow_w.svg');
+            }
+            @include breakpoint(medium){ 
+                background-image: url('../../assets/images/wkkv/boxlink-yellow.svg');
             }
         }
 
@@ -200,6 +281,10 @@ h1 {
             @include breakpoint(small only){
                 background-color: $mkkv-red;
                 margin-bottom: 40px;
+                background-image: url('../../assets/images/wkkv/boxlink-red_w.svg');
+            }
+            @include breakpoint(medium){ 
+                background-image: url('../../assets/images/wkkv/boxlink-red.svg');
             }
         }
 
@@ -208,7 +293,12 @@ h1 {
             @include breakpoint(small only){
                 background-color: $mkkv-grey;
                 margin-bottom: 40px;
+                background-image: url('../../assets/images/wkkv/boxlink-grey_w.svg');
             }
+            @include breakpoint(medium){ 
+                background-image: url('../../assets/images/wkkv/boxlink-grey.svg');
+            }
+
         }
     }
 }

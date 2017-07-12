@@ -19,6 +19,16 @@ function foundationpress_sidebar_widgets() {
 	));
 
 	register_sidebar(array(
+		'id' => 'calendar-widget',
+		'name' => __( 'Kalender-Widget', 'foundationpress' ),
+		'description' => __( 'Drag calendar widget to this container', 'foundationpress' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h6 class="calendar-widget-title" style="display: none;">',
+		'after_title' => '</h6>',
+	));
+
+	register_sidebar(array(
 		'id' => 'footer-widgets',
 		'name' => __( 'Footer widgets', 'foundationpress' ),
 		'description' => __( 'Drag widgets to this footer container', 'foundationpress' ),

@@ -57,6 +57,10 @@
 .container {
 	 @include breakpoint(small only){ 
        margin-top: 2rem;
+
+       & > * {
+       	padding-top: 3rem;
+       }
     }
 
     @include breakpoint(medium){
