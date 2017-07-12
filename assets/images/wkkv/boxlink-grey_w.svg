@@ -1,49 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 310.3 301" style="enable-background:new 0 0 310.3 301;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#121212;}
-	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
-	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#FCFCFC;}
-	.st3{fill:#FFFFFF;}
-</style>
-<g>
-	<path class="st3" d="M38.1,20.3c-1.3-3.5-3.1-8.7-4.2-11.8c-1.2,3.3-3,8.5-4.2,11.4L18.3,49h30.9L38.1,20.3z M16.1,54.9L7.9,76
-		c-1.3,3.3-1.4,3.4-4.5,3.4c-2,0-3.4-0.9-3.4-2.4C0,76.1,0,76,0.8,74L28.6,4.9c1.4-3.4,1.3-3.4,5-3.4h0.9c3.7,0,3.7,0,5,3.4L66.9,74
-		c0.9,2,0.9,2.1,0.9,2.9c0,1.3-1.4,2.4-2.9,2.4h-0.3c-3.7,0-3.7,0-5-3.5l-8.1-21H16.1z"/>
-	<path class="st3" d="M138.5,48.3c0,11.3-1.2,16.4-5.2,22.1c-5.1,7.2-13.1,10.7-24.9,10.7c-12.5,0-21.5-4.4-26.4-12.9
-		c-2.8-5-3.8-10.4-3.8-20.1V6.3c0-3.7,0.6-4.5,3.3-4.5c3.6,0,4.1,0.6,4.1,4.5v42c0,19.1,6.6,26.7,23.3,26.7c16,0,22.3-7.6,22.3-26.8
-		V6.3c0-3.7,0.6-4.5,3.3-4.5c3.6,0,4.1,0.6,4.1,4.5V48.3z"/>
-	<path class="st3" d="M159.4,21.1c0,8.1,3.6,10.7,20.9,14.7c12.5,2.9,16.4,4.1,20.3,6.4c6,3.7,9.2,9.1,9.2,16.1
-		c0,14.3-11.1,22.9-29.3,22.9c-11.7,0-21-3.8-26-10.9c-2.8-4-4.6-9.3-4.6-13.7c0-1.7,1.2-2.8,3.1-2.8c3.6,0,3.7,0.1,4.3,5.4
-		C158.5,68.4,168,75,180.7,75c14.2,0,22.1-5.8,22.1-16.2c0-5.6-3-9.5-9.1-12.1c-3.4-1.4-6.2-2.2-17.1-4.8
-		c-10.3-2.3-13.9-3.6-17.7-6.3c-4.3-2.9-6.7-8-6.7-14C152.2,8.3,162.4,0,179.3,0c10.9,0,19,3.5,23.9,10.2c2.1,3,3.9,8,3.9,10.9
-		c0,2.2-1,3-3.7,3c-2.9,0-2.9,0-4.2-5.8c-1.5-7.2-9.9-12.2-20.6-12.2C166.6,6.2,159.4,11.8,159.4,21.1"/>
-	<path class="st3" d="M61.8,93.5c0,8.1,3.6,10.7,20.9,14.7c12.5,2.9,16.4,4.1,20.3,6.4c6,3.7,9.2,9.1,9.2,16.1
-		c0,14.3-11.1,22.9-29.3,22.9c-11.7,0-21-3.8-26-10.9c-2.8-4-4.6-9.3-4.6-13.7c0-1.7,1.2-2.8,3.1-2.8c3.6,0,3.7,0.1,4.3,5.4
-		c1.2,9.4,10.7,15.9,23.3,15.9c14.2,0,22.1-5.8,22.1-16.2c0-5.6-3-9.5-9.1-12.1c-3.4-1.4-6.2-2.2-17.1-4.8
-		c-10.3-2.3-13.9-3.6-17.6-6.3c-4.3-2.9-6.7-8-6.7-14c0-13.4,10.2-21.7,27.1-21.7c10.9,0,19,3.5,23.9,10.2c2.1,3,3.9,8,3.9,10.9
-		c0,2.2-1,3-3.7,3c-2.9,0-2.9,0-4.2-5.8c-1.5-7.2-9.9-12.2-20.6-12.2C69,78.6,61.8,84.2,61.8,93.5"/>
-	<path class="st3" d="M152.6,147.3c0,3.7-0.6,4.5-3.3,4.5c-3.6,0-4.1-0.6-4.1-4.5V80.6h-22.8c-3.7,0-4.5-0.6-4.5-3.3
-		c0-2.6,0.8-3.1,4.5-3.1h52.7c3.7,0,4.5,0.6,4.5,3.1c0,2.7-0.8,3.3-4.5,3.3h-22.6V147.3z"/>
-	<path class="st3" d="M199,108.4h38.9c3.7,0,4.5,0.6,4.5,3.1c0,2.7-0.8,3.3-4.5,3.3H199v30.6h42.3c3.7,0,4.5,0.6,4.5,3.1
-		c0,2.7-0.8,3.3-4.5,3.3h-45.1c-4.2,0-4.5-0.3-4.5-4.5V78.7c0-4.2,0.3-4.5,4.5-4.5h44.6c3.7,0,4.5,0.6,4.5,3.1
-		c0,2.7-0.8,3.3-4.5,3.3H199V108.4z"/>
-	<path class="st3" d="M305.8,145.4c3.7,0,4.5,0.6,4.5,3.1c0,2.7-0.8,3.3-4.5,3.3H264c-4.2,0-4.5-0.3-4.5-4.5V78.7
-		c0-3.7,0.6-4.5,3.3-4.5c3.6,0,4.1,0.6,4.1,4.5v66.7H305.8z"/>
-	<path class="st3" d="M68.4,220.3c3.7,0,4.5,0.6,4.5,3.1c0,2.7-0.8,3.3-4.5,3.3H26.6c-4.2,0-4.5-0.3-4.5-4.5v-68.6
-		c0-3.7,0.6-4.5,3.3-4.5c3.6,0,4.1,0.6,4.1,4.5v66.7H68.4z"/>
-	<path class="st3" d="M127.7,195.6c0,11.3-1.2,16.4-5.2,22.1c-5.1,7.2-13.1,10.7-24.8,10.7c-12.5,0-21.5-4.4-26.4-12.9
-		c-2.8-5-3.8-10.4-3.8-20.1v-41.8c0-3.7,0.6-4.5,3.3-4.5c3.6,0,4.1,0.6,4.1,4.5v42c0,19.1,6.6,26.7,23.3,26.7
-		c16,0,22.3-7.6,22.3-26.8v-41.9c0-3.7,0.6-4.5,3.3-4.5c3.6,0,4.1,0.6,4.1,4.5V195.6z"/>
-	<path class="st3" d="M110.6,247.2c-0.6-0.8-1.5-2.2-4.4-6.9c-3.8-5.9-3.9-6.1-5.8-9.9c0.2,3.1,0.3,4.8,0.3,7.6v5.6l0.1,1.9v1.7v1.9
-		v45.6c0,3.6-0.6,4.5-3.3,4.5c-3.4,0-3.8-0.6-3.8-4.5v-68.6c0-4,0.5-4.5,4.1-4.5h0.9c3.5,0,3,0,5,2.7l34.3,49.9
-		c3.4,4.9,7.1,10.9,10.1,16.3c-0.2-5.4-0.5-15.2-0.5-20.5v-43.9c0-3.6,0.6-4.5,3.3-4.5c3.4,0,3.8,0.6,3.8,4.5v68.6
-		c0,4-0.5,4.5-4.1,4.5h-0.9c-3.5,0-3.1,0-5.1-2.7L110.6,247.2z"/>
-	<path class="st3" d="M232.8,284.8c-4.8,10.4-14.6,16.2-27.6,16.2c-21.4,0-36-16.3-36-40.2c0-24.1,15.1-41,36.5-41
-		c12.9,0,22.6,5,28.6,14.7c2,3,3.3,6.5,3.3,8.4c0,1.7-1.3,2.7-3.7,2.7c-1.9,0-2.7-0.6-3.3-2.1c-4.1-11.6-12.1-17.2-24.7-17.2
-		c-17.7,0-29.3,13.7-29.3,34.6c0,20.4,11.6,33.8,29.3,33.8c16.7,0,26.8-10.8,26.9-28.7h-22.1c-3.6,0-4.5-0.6-4.5-3
-		c0-2.4,0.9-3,4.5-3h24c4.2,0,4.5,0.3,4.5,4.5v30.4c0,3.4-0.7,4.5-2.6,4.5c-1.9,0-2.4-0.9-2.8-4.2L232.8,284.8z"/>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="822px"
+	 height="822px" viewBox="0 0 822 822" enable-background="new 0 0 822 822" xml:space="preserve">
+<g id="Ebene_3" display="none">
+	<rect display="inline" fill="#F4F4F4" width="822" height="822"/>
+	<rect display="inline" fill="#F4F4F4" width="822" height="822"/>
+	<rect display="inline" fill="#F4F4F4" width="822" height="822"/>
+</g>
+<g id="Ebene_6" display="none">
+	
+		<rect x="56" y="60" display="inline" fill="#F4F4F4" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="706" height="705"/>
+</g>
+<g id="Kalender" display="none">
+	<rect x="37" y="59.381" display="inline" fill="none" width="1164" height="1763"/>
+	<text transform="matrix(1 0 0 1 37 239.4692)" display="inline"><tspan x="0" y="0" font-family="'NimbusSansRound-Regular'" font-size="270">KA</tspan><tspan x="0" y="175" font-family="'NimbusSansRound-Regular'" font-size="270" letter-spacing="-31">							</tspan><tspan x="252" y="175" font-family="'NimbusSansRound-Regular'" font-size="270">LEN</tspan><tspan x="0" y="350" font-family="'NimbusSansRound-Regular'" font-size="270">D</tspan><tspan x="0" y="525" font-family="'NimbusSansRound-Regular'" font-size="270" letter-spacing="-31">							</tspan><tspan x="252" y="525" font-family="'NimbusSansRound-Regular'" font-size="270">ER</tspan></text>
+</g>
+<g id="Räumlichkeiten" display="none">
+	<rect x="37" y="60" display="inline" fill="none" width="1164" height="1763"/>
+	<text transform="matrix(1 0 0 1 37 240.0879)" display="inline"><tspan x="0" y="0" font-family="'NimbusSansRound-Regular'" font-size="270">RÄUM</tspan><tspan x="0" y="173" font-family="'NimbusSansRound-Regular'" font-size="270" letter-spacing="-31">		</tspan><tspan x="72" y="173" font-family="'NimbusSansRound-Regular'" font-size="270">LICH</tspan><tspan x="0" y="346" font-family="'NimbusSansRound-Regular'" font-size="270" letter-spacing="-31">	</tspan><tspan x="36" y="346" font-family="'NimbusSansRound-Regular'" font-size="270">KEIT</tspan><tspan x="0" y="519" font-family="'NimbusSansRound-Regular'" font-size="270" letter-spacing="-31">									</tspan><tspan x="324" y="519" font-family="'NimbusSansRound-Regular'" font-size="270">EN</tspan></text>
+</g>
+<g id="Salon">
+	<rect x="46" y="60" fill="none" width="1164" height="1763"/>
+	<text transform="matrix(1 0 0 1 46 240.0879)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'NimbusSansRound-Regular'" font-size="270">S</tspan><tspan x="0" y="175" fill="#FFFFFF" font-family="'NimbusSansRound-Regular'" font-size="270" letter-spacing="-31">						</tspan><tspan x="216" y="175" fill="#FFFFFF" font-family="'NimbusSansRound-Regular'" font-size="270">AL</tspan><tspan x="0" y="350" fill="#FFFFFF" font-family="'NimbusSansRound-Regular'" font-size="270" letter-spacing="-31">		</tspan><tspan x="72" y="350" fill="#FFFFFF" font-family="'NimbusSansRound-Regular'" font-size="270">O</tspan><tspan x="266.396" y="350" fill="#FFFFFF" font-family="'NimbusSansRound-Regular'" font-size="270" letter-spacing="-45">	</tspan><tspan x="288" y="350" fill="#FFFFFF" font-family="'NimbusSansRound-Regular'" font-size="270" letter-spacing="-31">									</tspan><tspan x="0" y="525" fill="#FFFFFF" font-family="'NimbusSansRound-Regular'" font-size="270">N</tspan></text>
+</g>
+<g id="Ausstellung" display="none">
+	<rect x="56" y="60" display="inline" fill="none" width="1164" height="1763"/>
+	<text transform="matrix(1 0 0 1 55.9995 240.0879)" display="inline"><tspan x="0" y="0" font-family="'NimbusSansRound-Regular'" font-size="270">AUS</tspan><tspan x="0" y="169" font-family="'NimbusSansRound-Regular'" font-size="270" letter-spacing="-31">			</tspan><tspan x="108" y="169" font-family="'NimbusSansRound-Regular'" font-size="270">STEL</tspan><tspan x="0" y="338" font-family="'NimbusSansRound-Regular'" font-size="270" letter-spacing="-31">	</tspan><tspan x="36" y="338" font-family="'NimbusSansRound-Regular'" font-size="270">LU</tspan><tspan x="0" y="507" font-family="'NimbusSansRound-Regular'" font-size="270" letter-spacing="-31">								</tspan><tspan x="288" y="507" font-family="'NimbusSansRound-Regular'" font-size="270">NG</tspan></text>
+	<rect x="95.606" y="862.077" display="inline" fill="none" width="494.975" height="353.982"/>
+	<text transform="matrix(1 0 0 1 95.606 878.085)" display="inline"><tspan x="0" y="0" font-family="'NimbusSansRound-Regular'" font-size="24">Schriftgröße 27</tspan><tspan x="0" y="29" font-family="'NimbusSansRound-Regular'" font-size="24">Zeilenabstand 175</tspan></text>
 </g>
 </svg>
