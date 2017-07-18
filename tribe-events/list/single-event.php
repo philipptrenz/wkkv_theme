@@ -21,42 +21,58 @@ $has_venue_address = ( ! empty( $venue_details['address'] ) ) ? ' location' : ''
 // Organizer
 $organizer = tribe_get_organizer();
 
+//Date and Time
+$info = tribe_events_event_schedule_details();
+
+
+
 ?>
+
+
 <!--eventbox-->
 <div class="row event-container">
-
 <!--Bereich links------------------------------------------------------------------------------------------------->
-	<div class="medium-2 columns event-content">
+	<div class="small-5 medium-3 large-2 columns event-content date">
 		<!-- Event Date -->
 		<?php do_action( 'tribe_events_before_the_meta' ) ?>
 		<div class="fa-lg text-center event-list-date">
-					<?php echo tribe_events_event_schedule_details() ?>
+					<?php echo strtok($info, ','); ?>
 		</div><!-- .tribe-events-event-meta -->
 	</div>
 
 
 <!--Bereich mitte------------------------------------------------------------------------->
-	<div class="medium-9 columns event-content ">
+	<div class="small-9 medium-11 large-9 columns event-content middle">
 		<!-- Event Title -->
 		<?php do_action( 'tribe_events_before_the_event_title' ) ?>
 		<h3 class="tribe-events-list-event-title event-list-text ">
 				<?php the_title() ?>
-		</h2>
-		<?php do_action( 'tribe_events_after_the_event_title' ) ?>
+		</h3>
 
-		<!-- Event Content -->
-		<?php do_action( 'tribe_events_before_the_content' ); ?>
-		<div class="tribe-events-list-event-description tribe-events-content description entry-summary event-list-text">
-			<?php echo tribe_events_get_the_excerpt( null, wp_kses_allowed_html( 'post' ) ); ?>
-			<a href="<?php echo esc_url( tribe_get_event_link() ); ?>" class="tribe-events-read-more event-list-text" rel="bookmark"><?php esc_html_e( 'Find out more', 'the-events-calendar' ) ?> &raquo;</a>
-		</div><!-- .tribe-events-list-event-description -->
+
+
+		<!--Künstler=Veranstalter- falls angegeben anzeigen-->
+		<?php if ( tribe_get_organizer()!="" ) : ?>
+			<h5>KÜNSTLER <?php echo tribe_get_organizer(); ?></h5>
+		<?php endif; ?>
+
+		<!--Falls Zeit angegeben-->
+		<?php if (strstr($info, ',')==true) : ?>
+			 <h5> <?php echo substr($info, strpos($info, ",")+1); ?></h5>
+		<?php endif;?>
+
+		<?php do_action( 'tribe_events_after_the_event_title' ) ?>
+			<a href="<?php echo esc_url( tribe_get_event_link() ); ?>" class="tribe-events-read-more event-list-text" rel="bookmark"> DETAILS </a>
 	</div>
 
 
 <!--Bereich rechts------------------------------------------------------------------------->
-	<div class="medium-3 columns event-content">
+	<div class="hide-for-small-only hide-for-medium-only large-3   columns event-content list-event-image ">
 		<!-- Event Image -->
 		<?php echo tribe_event_featured_image( null, 'medium' ); ?>
+	</div>
+	<div class="small-9 small-offset-5 hide-for-medium-only large-12 large-offset-2 collumn list-bg">
+	<p class="placeholder">Fckt euch Allee</p>
 	</div>
 </div><!--ende Eventbox -->
 

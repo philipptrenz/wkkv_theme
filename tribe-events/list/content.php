@@ -48,6 +48,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	</div>
 	<!-- #tribe-events-footer -->
-	<?php do_action( 'tribe_events_after_footer' ) ?>
+	
 
 </div><!-- #tribe-events-content -->
