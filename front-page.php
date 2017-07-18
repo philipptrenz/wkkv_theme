@@ -15,59 +15,62 @@
 
 get_header(); ?>
 
-
+<div  id="frontpagecontent">
 <div class="main-wrap front-page-element" role="main">
 
   <!--Logo-->
-	<div class="row" data-equalizer>
-		<div class="large-offset-1 large-6 medium-7 hide-for-small-only column" data-equalizer-watch>
+	<div class="row" id="logocontent" data-equalizer>
+		<div class="large-offset-1 large-6 medium-7 hide-for-small-only column" id="logo" data-equalizer-watch>
 			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/logo_white_pur.svg" style="width: 100%;">
 		</div>
+		<div id="outer" class="large-6 medium-7 small-14 columns end">
+		<div id="parallax" >
+			<div>
+				<div class="logo-text-wrapper">
+					<img class="logo-text" src="<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/logo_white_text_pur.svg" style="width: 100%;">
+				</div>
+			</div>
 
-		<div class="large-6 medium-7 small-14 column end" data-equalizer-watch>
-			<div class="logo-text-wrapper">
-				<img class="logo-text" src="<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/logo_white_text_pur.svg" style="width: 100%;">
+			<div>
+				<article class="main-content">
+				<?php if ( have_posts() ) : ?>
+
+					<?php /* Start the Loop */ ?>
+					<?php while ( have_posts() ) : the_post(); ?>
+							
+						<div id="post-<?php the_ID(); ?>" <?php post_class('blogpost-entry'); ?>>
+							<div class="entry-content">
+								<?php the_content( __( 'Continue reading...', 'foundationpress' ) ); ?>
+							</div>
+						</div>
+
+						<?php break; ?>
+					<?php endwhile; ?>
+
+					<?php else : ?>
+						<?php get_template_part( 'template-parts/content', 'none' ); ?>
+
+					<?php endif; // End have_posts() check. ?>
+
+					<?php /* Display navigation to next/previous pages when applicable */ ?>
+					<?php
+					if ( function_exists( 'foundationpress_pagination' ) ) :
+						foundationpress_pagination();
+					elseif ( is_paged() ) :
+					?>
+						<nav id="post-nav">
+							<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
+							<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
+						</nav>
+					<?php endif; ?>
+
+				</article>
 			</div>
 		</div>
-
-		<div class="large-offset-7 large-6 medium-offset-7 medium-7 small-14 end columns">
-			<article class="main-content">
-			<?php if ( have_posts() ) : ?>
-
-				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
-						
-					<div id="post-<?php the_ID(); ?>" <?php post_class('blogpost-entry'); ?>>
-						<div class="entry-content">
-							<?php the_content( __( 'Continue reading...', 'foundationpress' ) ); ?>
-						</div>
-					</div>
-
-					<?php break; ?>
-				<?php endwhile; ?>
-
-				<?php else : ?>
-					<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-				<?php endif; // End have_posts() check. ?>
-
-				<?php /* Display navigation to next/previous pages when applicable */ ?>
-				<?php
-				if ( function_exists( 'foundationpress_pagination' ) ) :
-					foundationpress_pagination();
-				elseif ( is_paged() ) :
-				?>
-					<nav id="post-nav">
-						<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
-						<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
-					</nav>
-				<?php endif; ?>
-
-			</article>
-		</div>
-
+		</div>	
 	</div>
 
+</div>
 </div>
 
 </section>

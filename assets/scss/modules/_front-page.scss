@@ -60,18 +60,35 @@ h1.sideways {
     }
 
 }
+#outer{
+    overflow:hidden;
+}
+
+#parallax{
+    @include breakpoint(medium){
+        height:700px;
+        margin-top: 90px;
+        margin-right: -33px; 
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding-left: 50px;
+        }
+    }
+
 
 .front-page {
-
-  background-color: $wkkv-green;
-  
+    background-color:$wkkv-green;
+    heigth: 100%;
 
 	.main-content {
-    margin-top: 40px;
-    color: $white;
-
-    
-  }
+        color: $white;
+        margin-top: 80px;
+        @include breakpoint(medium){
+            margin-top: 480px;
+            margin-bottom: 260px;
+        }
+        
+    }
 
   .main-wrap {
     background-color: $wkkv-green;
@@ -87,18 +104,22 @@ h1.sideways {
 	}
 }
 
-.logo-text-wrapper {
+#logo{
+    @include breakpoint(medium){
+        margin-top:200px;
+    }
 
-  display: flex;
-  height: 100%;
-
-  .logo-text {
-    align-self: flex-end;
-
-  }
-  
 }
 
+.logo-text{
+    @include breakpoint(medium){
+        margin-top:200px;
+    }
+}
+
+.front-page-element {
+    margin-bottom: 180px;
+}
 
 .calendar-wrap {
 
@@ -307,6 +328,4 @@ h1.sideways {
 }
 
 
-.front-page-element {
-  margin-bottom: 100px;
-}
+
