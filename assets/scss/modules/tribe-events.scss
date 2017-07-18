@@ -1,0 +1,27 @@
+.event-container {
+  margin: 0%;
+  margin-bottom: 1em;
+ margin-left: 1%;
+  border: 2px solid $wkkv-green;
+  border-left:10px solid $wkkv-green;
+ 
+  }
+ .event-content{
+	color: $wkkv-green;
+	padding-top: 3%;
+	padding-bottom: 3%;
+ }
+
+
+ .event-list-date{
+	padding-top:5%;
+	/*color: $wkkv-green;*/
+	line-height: 1.5em;
+ }
+ 
+ .event-list-text{
+	color: $wkkv-green;
+	:hover {
+        color:$mkkv-grey;
+    }
+ }
