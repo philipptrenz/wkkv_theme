@@ -1,0 +1,62 @@
+$bgcolor: #F3F8F5;
+
+.event-container {
+  position: relative;
+  margin: 0%;
+  margin-bottom: 1em;
+  margin-left: 1%;
+  border: 0px solid $wkkv-green;
+  border-left:10px solid $wkkv-green;
+  @include breakpoint(small only){
+    border: 0px solid $wkkv-green;
+    border-left:10px solid $wkkv-green;
+  }  @include breakpoint(medium only){
+      border: 0px solid $wkkv-green;
+      border-left:10px solid $wkkv-green;
+    }
+  }
+ .event-content{
+	color: $wkkv-green;
+	padding-top: 1.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+	padding-bottom: 0%;
+ }
+ .middle{
+   @include breakpoint(medium only){
+                background-color: $bgcolor;
+                padding-bottom: 1.5em;
+  }
+ }
+ .date{
+   @include breakpoint(small only){
+              font-size: .8em;
+  }
+  @include breakpoint(medium only){
+             font-size: .9em;
+ }
+ }
+
+ .event-list-date{
+	padding-top:5%;
+	/*color: $wkkv-green;*/
+	line-height: 1.5em;
+ }
+
+ .event-list-text{
+	color: $wkkv-green;
+ }
+.placeholder{
+  padding:0%;
+  margin:0%;
+  color: $bgcolor;
+}
+.list-bg{
+  position: absloute;
+  background-color: $bgcolor;
+}
+.list-event-image{
+  -webkit-filter: grayscale(10%); /* Safari 6.0 - 9.0 */
+   filter: grayscale(10%);
+
+}
