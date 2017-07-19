@@ -1,4 +1,5 @@
 $bgcolor: #F3F8F5;
+$lineHeight: 200px;
 
 .event-container {
   position: relative;
@@ -7,22 +8,19 @@ $bgcolor: #F3F8F5;
   margin-left: 1%;
   border: 0px solid $wkkv-green;
   border-left:10px solid $wkkv-green;
-  @include breakpoint(small only){
-    border: 0px solid $wkkv-green;
-    border-left:10px solid $wkkv-green;
-  }  @include breakpoint(medium only){
-      border: 0px solid $wkkv-green;
-      border-left:10px solid $wkkv-green;
-    }
+
   }
  .event-content{
 	color: $wkkv-green;
 	padding-top: 1.5em;
   padding-left: 1.5em;
   padding-right: 1.5em;
-	padding-bottom: 0%;
+	padding-bottom: 1.5em;
  }
  .middle{
+   height: $lineHeight;
+   background-color: $bgcolor;
+    padding-bottom: 1.5em;
    @include breakpoint(medium only){
                 background-color: $bgcolor;
                 padding-bottom: 1.5em;
@@ -46,17 +44,28 @@ $bgcolor: #F3F8F5;
  .event-list-text{
 	color: $wkkv-green;
  }
-.placeholder{
-  padding:0%;
-  margin:0%;
-  color: $bgcolor;
-}
+
 .list-bg{
   position: absloute;
   background-color: $bgcolor;
 }
+
+
 .list-event-image{
+  padding:0em;
+  height: $lineHeight;
+  background-color: $bgcolor;
   -webkit-filter: grayscale(10%); /* Safari 6.0 - 9.0 */
    filter: grayscale(10%);
-
 }
+.pic{
+
+	clip: rect(0px 300px 300px 0px);
+	overflow: hidden;
+  width: 200px;
+  height: 200px;
+ }
+
+ .head{
+   padding:5em;
+ }

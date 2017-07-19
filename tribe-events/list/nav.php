@@ -21,20 +21,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 <ul class="tribe-events-sub-nav">
 	<!-- Left Navigation -->
 	<div class="row ">
-	<div class="small-14">
+	<div class="small-6  small-offset-1 medium-5 medium-offset-2 large-6 large-offset-1 column float-left">
 	<?php if ( tribe_has_previous_event() ) : ?>
-		<li class="<?php echo esc_attr( tribe_left_navigation_classes() ); ?> " aria-label="previous events link">
-			<h3><a class="event-list-text" href="<?php echo esc_url( tribe_get_listview_prev_link() ); ?>" rel="prev"><?php printf( "<<" ); ?></a></h3>
-		</li><!-- .tribe-events-nav-left -->
+			<h3 class="float-left"><a class="event-list-text" href="<?php echo esc_url( tribe_get_listview_prev_link() ); ?>" rel="prev"><?php printf( "vorheriger Monat" ); ?></a></h3>
 	<?php endif; ?>
 	</div>
-	<div class="small-14">
-	<!-- Right Navigation -->
-	<?php if ( tribe_has_next_event() ) : ?>
-		<li class="<?php echo esc_attr( tribe_right_navigation_classes() ); ?>" aria-label="next events link">
-			<h3><a class="event-list-text" href="<?php echo esc_url( tribe_get_listview_next_link() ); ?>" rel="next"><?php printf( '>>' ); ?></a></h3>
-		</li><!-- .tribe-events-nav-right -->
-	<?php endif; ?>
-</div>
+	<div class="small-5 small-offset-7 column">
+		<!-- Right Navigation -->
+		<?php if ( tribe_has_next_event() ) : ?>
+				<h3 class="float-right"><a class="event-list-text" href="<?php echo esc_url( tribe_get_listview_next_link() ); ?>" rel="next"><?php printf( 'nächster Monat' ); ?></a></h3>
+		<?php endif; ?>
+	</div>
+
 </div>
 </ul>

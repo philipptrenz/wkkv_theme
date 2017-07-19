@@ -16,6 +16,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 } ?>
 
 
+
+
+
 <!--Container for one Event-->
 <div id="tribe-events-content " class="tribe-events-list "  >
 	<?php
@@ -28,8 +31,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 
-
-
 	<!-- Events Loop -->
 	<?php if ( have_posts() ) : ?>
 		<?php do_action( 'tribe_events_before_loop' ); ?>
@@ -37,17 +38,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php do_action( 'tribe_events_after_loop' ); ?>
 	<?php endif; ?>
 
-	<!-- List Footer -->
-	<?php do_action( 'tribe_events_before_footer' ); ?>
-	<div id="tribe-events-footer">
-
-		<!-- Footer Navigation -->
-		<?php do_action( 'tribe_events_before_footer_nav' ); ?>
-		<?php tribe_get_template_part( 'list/nav', 'footer' ); ?>
-		<?php do_action( 'tribe_events_after_footer_nav' ); ?>
-
-	</div>
-	<!-- #tribe-events-footer -->
 	
 
 </div><!-- #tribe-events-content -->

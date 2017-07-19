@@ -28,7 +28,6 @@ $info = tribe_events_event_schedule_details();
 
 ?>
 
-
 <!--eventbox-->
 <div class="row event-container">
 <!--Bereich links------------------------------------------------------------------------------------------------->
@@ -67,13 +66,13 @@ $info = tribe_events_event_schedule_details();
 
 
 <!--Bereich rechts------------------------------------------------------------------------->
+
 	<div class="hide-for-small-only hide-for-medium-only large-3   columns event-content list-event-image ">
 		<!-- Event Image -->
-		<?php echo tribe_event_featured_image( null, 'medium' ); ?>
+		<img class="pic float-right" src="<?php echo tribe_event_featured_image( null, 'medium',false,false );?>"> </img>
 	</div>
-	<div class="small-9 small-offset-5 hide-for-medium-only large-12 large-offset-2 collumn list-bg">
-	<p class="placeholder">Fckt euch Allee</p>
-	</div>
+
+
 </div><!--ende Eventbox -->
 
 
