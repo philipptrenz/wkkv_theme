@@ -12,6 +12,13 @@
   padding-bottom: $height;
 }
 
+//http://sassbreak.com/css-blend-modes-with-sass/
+@mixin blendy($img, $color, $blend) {
+  background-image: url($img);
+  background-color: $color;
+  background-blend-mode: $blend;
+}
+
 @mixin rotate($degrees) {
     -webkit-transform: rotate($degrees);
     -moz-transform: rotate($degrees);
@@ -190,81 +197,70 @@ h1.sideways {
 .offer-wrap {
     padding: 0 0 40px;
 
-    /*
-    @include breakpoint(medium){
-         margin-left: rem-calc(20);       
-    }  */  
-
-    .grid-img {
-        background-repeat:no-repeat;
-        background-size: cover;
-
-        background-image: url('../../assets/images/wkkv/grid_image-default.jpg');
-
-        &-1 {
-          //background-image: url('../../assets/images/wkkv/grid_image-1.jpg');
-        }
-        &-2 {
-          //background-image: url('../../assets/images/wkkv/grid_image-2.jpg');
-        }
-        &-3 {
-          //background-image: url('../../assets/images/wkkv/grid_image-3.jpg');
-        }
-        &-4 {
-          //background-image: url('../../assets/images/wkkv/grid_image-4.jpg');
-        }
+	.boxColor {
+		@include square();
+		background: no-repeat center;
+		@include transition(background-image, 0.5s, ease-in-out);
+		background-blend-mode: luminosity;
 		
+		.arrow {
+			@include square();
+			background-image: url('../../assets/images/wkkv/arrow.svg');
+			background-size: 45%;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		
+		&-blue {
+			@extend .boxColor;
+			background-color: $mkkv-blue;
+			&:hover {
+				 opacity: 0.5; 
+				 background-image:url("../../assets/images/wkkv/grid_image-default.jpg");
+			}
+			.arrow {
+				@include rotate(180deg);
+			}
+		}
 
-        .boxColor {
-            @include square();
-            background-size:     45%;     
-            background-repeat:   no-repeat;
-            background-position: center;
-            background-image: url('../../assets/images/wkkv/arrow.svg');
+		&-yellow {
+			@extend .boxColor;
+			background-color: $mkkv-yellow;
+			&:hover {
+				 opacity: 0.5; 
+				 background-image:url("../../assets/images/wkkv/grid_image-default.jpg");
+			}
+		}
 
-      			@include transition(background-color, 0.5s, ease-in-out);
-            
-            &-blue {
-                @extend .boxColor;
-                background-color: $mkkv-blue;
-                @include rotate(180deg);
-                &:hover {
-                     background-color: transparentize($mkkv-blue, .3);;
-                }
-            }
+		&-red {
+			@extend .boxColor;
+			background-color: $mkkv-red;
+			&:hover {
+				 opacity: 0.5; 
+				 background-image:url("../../assets/images/wkkv/grid_image-default.jpg");
+			}
+			.arrow {
+				@include rotate(180deg);
+			}
+		}
 
-            &-yellow {
-                @extend .boxColor;
-                background-color: $mkkv-yellow;
-                &:hover {
-                     background-color: transparentize($mkkv-yellow, .3);
-                }
-            }
-
-            &-red {
-                @extend .boxColor;
-                background-color: $mkkv-red;
-                @include rotate(180deg);
-				
-                &:hover {
-                     background-color: transparentize($mkkv-red, .3);
-                }
-            }
-
-            &-grey {
-                @extend .boxColor;
-                background-color: $mkkv-grey;
+		&-grey {
+			@extend .boxColor;
+			background-color: $mkkv-grey;
+			
+			&:hover {
+				 opacity: 0.5; 
+				 background-image:url("../../assets/images/wkkv/grid_image-default.jpg");
+			}
+			.arrow {
 				@include breakpoint(large){
-                    @include rotate(270deg);
-                }
-                &:hover {
-					 background-color: transparentize($mkkv-grey, .3);
-                }
-            }
+					@include rotate(270deg);
+				}
+			}
+		}
+	}
 
-        }
-
-    }
+    
  
     .boxLink {
         @include square();

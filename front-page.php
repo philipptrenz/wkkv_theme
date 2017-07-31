@@ -97,10 +97,9 @@ get_header(); ?>
 
 		<div class="row small-up-12 collapse">
 		    <div class="show-for-medium large-4 medium-6 small-14 columns end">
-		      <div class="grid-img grid-img-1">
-				<div class="boxColor-blue">
-				</div>
-			  </div>
+			<div class="boxColor-blue">
+				<div class="arrow"></div>
+			</div>
 		    </div>
 		    <div class="large-4 medium-6 small-14 columns end">
 		      <a href="#">
@@ -117,19 +116,17 @@ get_header(); ?>
 			  </a>
 		    </div>
 		    <div class="show-for-medium large-4 medium-6 small-14 column end">
-		      <div class="grid-img grid-img-2">
 				<div class="boxColor-yellow">
+					<div class="arrow"></div>
 				</div>
-			  </div>
 		    </div>
 	  </div>
 
 	  <div class="row small-up-12 collapse">
 		    <div class=" show-for-medium large-4 medium-6 small-14 column end">
-		      <div class="grid-img grid-img-3">
 				<div class="boxColor-red">
+					<div class="arrow"></div>
 				</div>
-			  </div>
 		    </div>
 		    <div class="large-4 medium-6 small-14 columns end">
 		      <a href="#">
@@ -142,10 +139,9 @@ get_header(); ?>
 			  </a>
 		    </div>
 		    <div class="show-for-medium large-offset-0 large-4 medium-6 small-14 column end">
-		      <div class="grid-img grid-img-4">
 				<div class="boxColor-grey">
+					<div class="arrow"></div>
 				</div>
-			  </div>
 		    </div>
 	  </div>
 
