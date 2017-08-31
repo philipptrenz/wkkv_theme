@@ -5,31 +5,32 @@
  * @package FoundationPress
  * @since FoundationPress 1.0.0
  */
-
 get_header(); ?>
 
  <div class="main-wrap" role="main">
 	<article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
 		<header>
-			<h1 class="entry-title"><?php _e( 'File Not Found', 'foundationpress' ); ?></h1>
+			<img height="50px" src="<?php echo get_template_directory_uri(); ?>/assets/images/wkkv/katze_error.png"></img>
+			<h1 class="entry-title"><?php _e( 'Ressource nicht gefunden', 'foundationpress' ); ?></h1>
 		</header>
 		<div class="entry-content">
+			<!-- Katzenbild für Error !-->
 			<div class="error">
-				<p class="bottom"><?php _e( 'The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.', 'foundationpress' ); ?></p>
+				<p class="bottom"><?php _e( 'Leider konnte für die angefragte Seite kein Design (auf dem TrelloBoard) gefunden werden.', 'foundationpress' ); ?></p>
 			</div>
-			<p><?php _e( 'Please try the following:', 'foundationpress' ); ?></p>
+			<p><?php _e( 'Versuche folgendes:', 'foundationpress' ); ?></p>
 			<ul>
-				<li><?php _e( 'Check your spelling', 'foundationpress' ); ?></li>
+				<li><?php _e( 'Ueberpruefe Schreibfehler', 'foundationpress' ); ?></li>
 				<li>
 					<?php
 						/* translators: %s: home page url */
 						printf( __(
-							'Return to the <a href="%s">home page</a>', 'foundationpress' ),
+							'Zurueck zur <a href="%s">Startseite</a>', 'foundationpress' ),
 							home_url()
 						);
 					?>
 				</li>
-				<li><?php _e( 'Click the <a href="javascript:history.back()">Back</a> button', 'foundationpress' ); ?></li>
+				<li><?php _e( '<a href="javascript:history.back()">Hier</a> gelangst du zurueck zur vorherigen Seite.', 'foundationpress' ); ?></li>
 			</ul>
 		</div>
 	</article>
